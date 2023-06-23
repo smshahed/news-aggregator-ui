@@ -1,8 +1,9 @@
 {
-  "name": "y",
+
+  "name": "news-aggregator-ui",
   "version": "1.0.0",
-  "description": "y",
-  "author": "y",
+  "description": "A Vue.js project",
+  "author": "S M Shahed <shahed23@gmail.com>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",

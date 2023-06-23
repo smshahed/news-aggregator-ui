@@ -1,6 +1,7 @@
-# y
 
-> y
+# news-aggregator-ui
+
+> A Vue.js project
 
 ## Build Setup
 
