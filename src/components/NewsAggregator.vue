@@ -76,16 +76,12 @@ export default {
   },
   methods: {
     submit () {
-      // Validate start date and end date
-      if (this.startDate > this.endDate) {
-        alert('Start Date cannot be later than End Date')
-        return
-      }
+      this.validate()
 
       const after = new Date(this.startDate)
       const before = new Date(this.endDate)
-      before.setUTCHours(23, 59, 59)
       after.setUTCHours(0, 0, 0)
+      before.setUTCHours(23, 59, 59)
 
       axios.get('http://localhost:3000/results', {
         params: {
@@ -101,8 +97,21 @@ export default {
         })
         .catch(error => {
           console.error('Error sending data', error)
-          // Handle the error as needed
         })
+    },
+
+    validate () {
+      const startDateValid = /^\d{4}-\d{2}-\d{2}$/.test(this.startDate)
+      const endDateValid = /^\d{4}-\d{2}-\d{2}$/.test(this.endDate)
+
+      if (!startDateValid || !endDateValid) {
+        alert('Invalid date format. Please enter dates in YYYY-MM-DD format.')
+        return
+      }
+
+      if (this.startDate > this.endDate) {
+        alert('Start Date cannot be later than End Date')
+      }
     },
 
     generateChartData (response) {
