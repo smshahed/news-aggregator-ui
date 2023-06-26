@@ -1,7 +1,7 @@
 <template>
   <div class="container-lg mt-4">
     <div class="card border-primary mb-3">
-      <div class="card-header border-primary mb-3 bg-transparent fw-bold">News Aggregation Report</div>
+      <div class="card-header border-primary bg-transparent fw-bold">News Aggregation Report</div>
       <div class="card-body">
         <form class="row g-4">
           <div class="col-sm-4">
