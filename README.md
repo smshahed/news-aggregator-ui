@@ -3,6 +3,10 @@
 
 > This is the frontend of the News Aggregator project, which allows users to search and aggregate news data. To run this app, please ensure that the backend server is running.
 
+# Screenshots
+<img width="1210" alt="Screenshot 2023-06-26 at 11 20 26 PM" src="https://github.com/smshahed/news-aggregator-ui/assets/8651630/f419eb2a-26d7-49df-a036-8aeea40e6a16">
+
+
 ## How to run this app
 
 ### Install dependencies
