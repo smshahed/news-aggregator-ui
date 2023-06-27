@@ -116,7 +116,8 @@ export default {
 
     generateChartData (response) {
       const dates = []
-      const mediums = ['Online', 'TV', 'Radio', 'Print', 'Social'] // Fixed set of mediums
+      // Medium size is assumed to be 5. Alternatively, it could be calculated from the response.
+      const mediums = ['Online', 'TV', 'Radio', 'Print', 'Social']
       const colors = ['#54B399', '#D36086', '#6092C0', '#9170B8', '#d97dff'] // Colors for each medium
 
       response.forEach((element) => {
